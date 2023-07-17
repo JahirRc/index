@@ -1,5 +1,10 @@
 
   /* El código CSS adaptado empieza aquí */
+
+html{
+    cursor: url("Cursor_UL.png"),auto;
+  }
+
   body {
     background-color: #C8C2AA;
     background-size: 4px 4px;
@@ -132,6 +137,7 @@
     box-shadow: 3px 3px 0 rgba(77, 73, 62, .6);
     margin-right: 2rem;
     border-radius: 4px;
+    cursor: url("Hand_Point.png"),auto;
   }
   
 
