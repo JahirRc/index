@@ -72,7 +72,7 @@
   }
   
   button {
-    cursor: url("https://github.com/Beinsezii/NieR-Cursors/blob/master/previews/Cursor_UL.png?raw=true"), auto;
+    cursor: url("Cursor_UL.png"),auto;
     font: inherit;
     border: none;
     padding: .4rem 1rem;
