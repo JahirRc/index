@@ -1,54 +1,4 @@
-/*body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #title-screen {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .title {
-    margin-bottom: 30px;
-  }
-  
-  .title h1 {
-    font-size: 48px;
-    margin: 0;
-  }
-  
-  .title h2 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .press-start {
-    font-size: 18px;
-    animation: blink-animation 1s infinite;
-  }
-  
-  @keyframes blink-animation {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  */
 
-
-  
   /* El código CSS adaptado empieza aquí */
   
   body {
@@ -122,7 +72,7 @@
   }
   
   button {
-    cursor: pointer;
+    cursor: url("https://github.com/Beinsezii/NieR-Cursors/blob/master/previews/Cursor_UL.png?raw=true"), auto;
     font: inherit;
     border: none;
     padding: .4rem 1rem;
