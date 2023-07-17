@@ -29,7 +29,7 @@
                 <p>Backend and videogames enthusiast</p>
                 <p>Specialized in PHP and MYSQL database</p>
                 <p>Ready to learn new things that u required</p>
-                <button onclick=" window.open('https://github.com/JahirRc', '_blank'); return false;" type="button">Github</button>
+                <button id="git" onclick=" window.open('https://github.com/JahirRc', '_blank'); return false;" type="button">Github</button>
             </div>
         </div>
         
@@ -56,6 +56,19 @@
         <div class="pattern-inner"></div>
     </div>
 </div>
+    <script>
+  var audio = new Audio('core_1.ogg');
+
+  var audio2 = new Audio('core_10.ogg');
+
+  $('#git').mouseenter(function() {
+    audio.play();
+  });
+
+  $('#git, a').click(function() {
+      audio2.play();
+    });
+</script>
 </body>
 </html>
   
