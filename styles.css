@@ -1,6 +1,8 @@
 
   /* El código CSS adaptado empieza aquí */
-  
+*{
+  cursor: url("Cursor_UL.png"),auto;
+}
   body {
     background-color: #C8C2AA;
     background-size: 4px 4px;
@@ -72,7 +74,7 @@
   }
   
   button {
-    cursor: url("Cursor_UL.png"),auto;
+    cursor: pointer;
     font: inherit;
     border: none;
     padding: .4rem 1rem;
