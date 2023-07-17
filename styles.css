@@ -76,7 +76,7 @@ html{
   }
   
   button {
-    cursor: pointer;
+    cursor: url("Hand_Point.png"),auto;
     font: inherit;
     border: none;
     padding: .4rem 1rem;
