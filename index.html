@@ -69,6 +69,13 @@
   $('#git, a').click(function() {
       audio2.play();
     });
+
+  $(document).ready(function() {
+    $(document).on('click', function() {
+      $('#backgroundSound')[0].play();
+      $('#backgroundSound')[0].volume = 0.2;
+    });
+  });
 </script>
 </body>
 </html>
