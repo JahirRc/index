@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JahirRc - Portfolio</title>
+    <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./src/styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    
+    <header>
+        <div class="pattern">
+            <div class="container">
+                <div class="pattern-inner"></div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>
+              <span>Portfolio</span>
+            </h1>
+          </div>
+    </header>
+
+    <audio id="backgroundSound" autoplay loop>
+      <source src="./src/sounds/menu.mp3" type="audio/mp3">
+    </audio>
+  
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>
+                    <span>About Me</span>
+                </h1>
+                <p>Backend and videogames enthusiast.</p>
+                <p>Specialized in PHP, React, Node and MYSQL database.</p>
+                <p>Ready to learn new things that u required.</p>
+                <button id="git" onclick=" window.open('https://github.com/JahirRc', '_blank'); return false;" type="button">Github</button>
+                <button id="git" type="button">Discord - JahirRc</button>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="content">
+                <h1>
+                    <span>Personal Projects</span>
+                </h1>
+
+                <div class="proyect-content">
+                  <div class="image-link">
+                    <img src="https://img.itch.zone/aW1hZ2UvMTUwMTEwNy84OTQ4NzM5LnBuZw==/original/BXpAul.png">
+                    <button id="git" class="image-overlay" onclick=" window.open('https://jahirrc.itch.io/put-your-way', '_blank'); return false;" type="button">Put Your Way Videogame - Unity</button>
+                  </div>
+                  <div class="image-link">
+                    <img src="src/images/github.jpeg" width="300px">
+                    <button id="git" class="image-overlay" onclick=" window.open('https://github.com/JahirRc/Inventory-System', '_blank'); return false;" type="button">Inventory System Using - PHP MYSQL</button>
+                  </div>
+                  <div class="image-link">
+                    <img src="src/images/FNAFTD.JPG">
+                    <button id="git" class="image-overlay" onclick=" window.open('https://sites.google.com/view/fntdvaluecentral/main-page?authuser=0', '_blank'); return false;" type="button">FIVE NIGHTS TD VALUE CENTRAL</button>
+                  </div>
+                  <div class="image-link">
+                    <img src="src/images/discord-page.jpg">
+                    <button id="git" class="image-overlay" onclick=" window.open('https://jahirrc.github.io/discord-interface/prueba.html', '_blank'); return false;" type="button">Discord Main Interface Clone - HTML CSS</button>
+                  </div>
+                  <div class="image-link">
+                    <img src="src/images/achievements.jpg">
+                    <button id="git" class="image-overlay" onclick=" window.open('https://jahirrc.github.io/game-achievements-register/achievement.html', '_blank'); return false;" type="button">Achievements Register - JS</button>
+                  </div>
+                  <div class="image-link">
+                    <img src="src/images/FNTD-CENTRAL.JPG">
+                    <button id="git" class="image-overlay" onclick=" window.open('fntd2.com', '_blank'); return false;" type="button">FNTD VALUE CENTRAL (FNTD2)</button>
+                  </div>
+				  <div class="image-link">
+                    <img src="src/images/GARDEN-TD.JPG">
+                    <button id="git" class="image-overlay" onclick=" window.open('fntd2.com', '_blank'); return false;" type="button">GARDENTD VALUE LIST</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <p>Template inspired on Nier Automata UI</p>
+            </div>
+        </div>
+    </main>
+
+
+  <div class="pattern">
+    <div class="container">
+        <div class="pattern-inner"></div>
+    </div>
+</div>
+
+<script>
+  var audio = new Audio('./src/sounds/core_1.ogg');
+  var audio2 = new Audio('./src/sounds/core_10.ogg');
+
+  $('#git, a').mouseenter(function() {
+    audio.play();
+    audio.volume = 0.4;
+  });
+
+  $('#git, a').click(function() {
+    audio2.play();
+    audio2.volume = 0.3;
+  });
+  
+  $(document).ready(function() {
+    $(document).on('click', function() {
+      $('#backgroundSound')[0].play();
+      $('#backgroundSound')[0].volume = 0.2;
+    });
+  });
+</script>
+</body>
+</html>
+  
