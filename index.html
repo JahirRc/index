@@ -6,7 +6,6 @@
     <title>JahirRc - Portfolio</title>
     <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
     <link rel="stylesheet" type="text/css" href="./src/styles/styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     
@@ -16,15 +15,16 @@
                 <div class="pattern-inner"></div>
             </div>
         </div>
-        <div class="container">
+        <div class="container header-inner">
             <h1>
               <span>Portfolio</span>
             </h1>
+            <button id="soundToggle" class="sound-toggle" type="button" aria-pressed="true">Sound: On</button>
         </div>
     </header>
 
-    <audio id="backgroundSound" autoplay loop>
-      <source src="./src/sounds/menu.mp3" type="audio/mp3">
+    <audio id="backgroundSound" loop preload="none">
+      <source src="./src/sounds/menu.mp3" type="audio/mpeg">
     </audio>
   
     <main>
@@ -36,46 +36,62 @@
                 <p>Backend and videogames enthusiast.</p>
                 <p>Specialized in PHP, React, Node and MYSQL database.</p>
                 <p>Ready to learn new things that u required.</p>
-                <button id="git" onclick="window.open('https://github.com/JahirRc', '_blank'); return false;" type="button">Github</button>
-                <button id="git" type="button">Discord - JahirRc</button>
+                <button class="btn" onclick="window.open('https://github.com/JahirRc', '_blank'); return false;" type="button">Github</button>
+                <button class="btn" id="discordBtn" type="button">Discord - JahirRc</button>
             </div>
         </div>
         
         <div class="container">
             <div class="content">
                 <h1>
-                    <span>Personal Projects</span>
+                    <span>Active Projects</span>
                 </h1>
 
                 <div class="proyect-content">
                   <div class="image-link">
-                    <img src="https://img.itch.zone/aW1hZ2UvMTUwMTEwNy84OTQ4NzM5LnBuZw==/original/BXpAul.png">
-                    <button id="git" class="image-overlay" onclick="window.open('https://jahirrc.itch.io/put-your-way', '_blank'); return false;" type="button">Put Your Way Videogame - Unity</button>
+                    <img src="src/images/FNTD-CENTRAL.JPG" alt="FNTD Value Central">
+                    <button class="btn image-overlay" onclick="window.open('https://fntd2.com', '_blank'); return false;" type="button">FNTD VALUE CENTRAL (FNTD2)</button>
+                    <span class="visits">6M+ visits</span>
                   </div>
                   <div class="image-link">
-                    <img src="src/images/github.jpeg" width="300px">
-                    <button id="git" class="image-overlay" onclick="window.open('https://github.com/JahirRc/Inventory-System', '_blank'); return false;" type="button">Inventory System Using - PHP MYSQL</button>
+                    <img src="src/images/GARDEN-TD.JPG" alt="Garden TD value list">
+                    <button class="btn image-overlay" onclick="window.open('https://sites.google.com/view/garden-td-values/', '_blank'); return false;" type="button">GARDENTD VALUE LIST</button>
+                    <span class="visits">12M+ visits</span>
                   </div>
                   <div class="image-link">
-                    <img src="src/images/FNAFTD.JPG">
-                    <button id="git" class="image-overlay" onclick="window.open('https://sites.google.com/view/fntdvaluecentral/main-page?authuser=0', '_blank'); return false;" type="button">FIVE NIGHTS TD VALUE CENTRAL</button>
+                    <img src="src/images/FNAFTD.JPG" alt="Five Nights TD Value Central">
+                    <button class="btn image-overlay" onclick="window.open('https://sites.google.com/view/fntdvaluecentral/main-page?authuser=0', '_blank'); return false;" type="button">FIVE NIGHTS TD VALUE CENTRAL</button>
+                    <span class="visits">7M+ visits</span>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <h1>
+                    <span>More Projects</span>
+                </h1>
+
+                <div class="proyect-content">
+                  <div class="image-link">
+                    <img src="src/images/github.jpeg" alt="Inventory System project">
+                    <button class="btn image-overlay" onclick="window.open('https://github.com/JahirRc/Inventory-System', '_blank'); return false;" type="button">Inventory System Using - PHP MYSQL</button>
                   </div>
                   <div class="image-link">
-                    <img src="src/images/discord-page.jpg">
-                    <button id="git" class="image-overlay" onclick="window.open('https://jahirrc.github.io/discord-interface/prueba.html', '_blank'); return false;" type="button">Discord Main Interface Clone - HTML CSS</button>
+                    <img src="https://img.itch.zone/aW1hZ2UvMTUwMTEwNy84OTQ4NzM5LnBuZw==/original/BXpAul.png" alt="Put Your Way videogame">
+                    <button class="btn image-overlay" onclick="window.open('https://jahirrc.itch.io/put-your-way', '_blank'); return false;" type="button">Put Your Way Videogame - Unity</button>
+                  </div>
+                  <!--
+                  <div class="image-link">
+                    <img src="src/images/discord-page.jpg" alt="Discord interface clone">
+                    <button class="btn image-overlay" onclick="window.open('https://jahirrc.github.io/discord-interface/prueba.html', '_blank'); return false;" type="button">Discord Main Interface Clone - HTML CSS</button>
                   </div>
                   <div class="image-link">
-                    <img src="src/images/achievements.jpg">
-                    <button id="git" class="image-overlay" onclick="window.open('https://jahirrc.github.io/game-achievements-register/achievement.html', '_blank'); return false;" type="button">Achievements Register - JS</button>
+                    <img src="src/images/achievements.jpg" alt="Achievements register">
+                    <button class="btn image-overlay" onclick="window.open('https://jahirrc.github.io/game-achievements-register/achievement.html', '_blank'); return false;" type="button">Achievements Register - JS</button>
                   </div>
-                  <div class="image-link">
-                    <img src="src/images/FNTD-CENTRAL.JPG">
-                    <button id="git" class="image-overlay" onclick="window.open('https://fntd2.com', '_blank'); return false;" type="button">FNTD VALUE CENTRAL (FNTD2)</button>
-                  </div>
-                  <div class="image-link">
-                    <img src="src/images/GARDEN-TD.JPG">
-                    <button id="git" class="image-overlay" onclick="window.open('https://sites.google.com/view/garden-td-values/', '_blank'); return false;" type="button">GARDENTD VALUE LIST</button>
-                  </div>
+                  -->
                 </div>
             </div>
         </div>
@@ -93,25 +109,92 @@
         </div>
     </div>
 
+    <div id="toast" class="toast">Discord username copied!</div>
+
 <script>
-  var audio = new Audio('./src/sounds/core_1.ogg');
-  var audio2 = new Audio('./src/sounds/core_10.ogg');
+  var bg = document.getElementById('backgroundSound');
+  var hoverSound = new Audio('./src/sounds/core_1.ogg');
+  var clickSound = new Audio('./src/sounds/core_10.ogg');
+  var toggle = document.getElementById('soundToggle');
+  var soundOn = true;
 
-  $('#git, a').mouseenter(function() {
-    audio.play();
-    audio.volume = 0.4;
+  try {
+    soundOn = localStorage.getItem('sound') !== 'off';
+  } catch (e) {}
+
+  hoverSound.volume = 0.4;
+  clickSound.volume = 0.3;
+
+  function play(audio) {
+    var promise = audio.play();
+    if (promise && promise.catch) promise.catch(function () {});
+  }
+
+  function updateToggle() {
+    toggle.textContent = soundOn ? 'Sound: On' : 'Sound: Off';
+    toggle.setAttribute('aria-pressed', String(soundOn));
+  }
+
+  function playBackground() {
+    if (!soundOn) return;
+    bg.volume = 0.2;
+    play(bg);
+  }
+
+  function playEffect(audio) {
+    if (!soundOn) return;
+    if (!audio.paused) audio.currentTime = 0;
+    play(audio);
+  }
+
+  updateToggle();
+
+  toggle.addEventListener('click', function (event) {
+    event.stopPropagation();
+    soundOn = !soundOn;
+    try {
+      localStorage.setItem('sound', soundOn ? 'on' : 'off');
+    } catch (e) {}
+    updateToggle();
+    if (soundOn) {
+      playBackground();
+    } else {
+      bg.pause();
+    }
   });
 
-  $('#git, a').click(function() {
-    audio2.play();
-    audio2.volume = 0.3;
+  document.addEventListener('click', playBackground);
+
+  document.querySelectorAll('button:not(#soundToggle)').forEach(function (button) {
+    button.addEventListener('mouseenter', function () { playEffect(hoverSound); });
+    button.addEventListener('click', function () { playEffect(clickSound); });
   });
-  
-  $(document).ready(function() {
-    $(document).on('click', function() {
-      $('#backgroundSound')[0].play();
-      $('#backgroundSound')[0].volume = 0.2;
-    });
+
+  var discordBtn = document.getElementById('discordBtn');
+  var toast = document.getElementById('toast');
+  var toastTimeout;
+
+  discordBtn.addEventListener('click', function () {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText('JahirRc').catch(function () {});
+    } else {
+      var temp = document.createElement('textarea');
+      temp.value = 'JahirRc';
+      temp.style.position = 'fixed';
+      temp.style.opacity = '0';
+      document.body.appendChild(temp);
+      temp.select();
+      try {
+        document.execCommand('copy');
+      } catch (e) {}
+      document.body.removeChild(temp);
+    }
+
+    clearTimeout(toastTimeout);
+    toast.classList.add('show');
+    toastTimeout = setTimeout(function () {
+      toast.classList.remove('show');
+    }, 3000);
   });
 </script>
 </body>
